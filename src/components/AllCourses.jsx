@@ -1,6 +1,7 @@
 import React from 'react';
 import fsd1 from '../assets/fsd1.jpg';
 import fsd3 from  '../assets/fsd3.png';
+import fsd4 from '../assets/fsd4.jpg';
 import fsd5 from '../assets/fsd5.webp';
 import data3 from '../assets/data3.png';
 import data4 from '../assets/data4.png';
@@ -43,7 +44,7 @@ const allCourses = [
         {
         id:4,
         title:"Top 10 Full-Stack Developer Frameworks in 2024",
-        img:"https://www.guvi.in/blog/wp-content/uploads/2023/07/html-css-collage-concept-with-person-768x512.jpg",
+        img:fsd4,
         views:8666,
         author:"Isha Sharma",
         date:"16 Apr, 2024",
