@@ -1,10 +1,13 @@
 import React from 'react';
-
+import cyber1 from '../assets/cyber1.webp';
+import cyber3 from '../assets/cyber3.gif';
+import cyber4 from '../assets/cyber4.webp';
+import cyber5 from '../assets/cyber5.webp';
 const CyberSecurity = () => {
     const courses = [
         {
             id: 1,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2022/11/Teal-Illustration-Digital-Business-Blog-Banner-1-1536x864.png',
+            img:cyber1,
             title: '8 Different Types of Cybersecurity and Threats Involved',
             author: 'Tushar Vinocha',
             date: '08 Sep, 2023',
@@ -13,16 +16,16 @@ const CyberSecurity = () => {
         },
         {
             id: 2,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2023/07/Real-World-Data-Science-Examples-1536x804.webp',
-            title: '12 Real-World Data Science Examples: Power Of Data Science',
-            author: 'Lukesh S',
-            date: '25 Mar, 2024',
-            views: '8595',
-            readTime: '7 Min Read'
+            img: 'https://www.guvi.in/blog/wp-content/uploads/2021/03/The-Ultimate-%E2%80%A8Cybersecurity-Roadmap-for-Beginners.webp',
+            title: 'The Ultimate Cybersecurity Roadmap for Beginners',
+            author: 'Srinithi Sankar',
+            date: '23 Mar, 2024',
+            views: '1443',
+            readTime: '3 Min Read'
         },
         {
             id: 3,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2022/12/cybersecuity-.gif',
+            img:cyber3,
             title: 'What is Cybersecurity? Importance and its uses & the growing challenge...',
             author: 'Saakshi Priyadarshini',
             date: '04 Oct, 2023',
@@ -31,7 +34,7 @@ const CyberSecurity = () => {
         },
         {
             id: 4,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2021/03/Blog-9-600x314.png',
+            img:cyber4,
             title: 'The Cybersecurity Surge: 5 Must-Have Cybersecurity Certifications!',
             author: 'Jaishree Tomar',
             date: '25 Mar, 2024',
@@ -40,7 +43,7 @@ const CyberSecurity = () => {
         },
         {
             id: 5,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2022/06/8bfd01c18be1b5059bc0d7770d9dabf1.gif',
+            img:cyber5,
             title: 'Is coding required for cybersecurity? If yes, how crucial is coding for cyb...',
             author: 'Tushar Vinocha',
             date: '25 Mar, 2024',

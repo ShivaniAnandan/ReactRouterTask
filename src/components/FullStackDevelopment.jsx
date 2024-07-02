@@ -1,11 +1,14 @@
 import React from 'react';
+import fsd1 from '../assets/fsd1.jpg';
+import fsd3 from  '../assets/fsd3.png';
+import fsd5 from '../assets/fsd5.webp';
 
 const FullStackDevelopment = () => {
     let courses = [
         {
         id:1,
         title:"Best Full-Stack Development Project Ideas in 2024",
-        img:"https://www.guvi.in/blog/wp-content/uploads/2023/07/person-front-computer-working-html.jpg",
+        img:fsd1,
         iconimg:"https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg",
         views:115491,
         author:"By Isha Sharma.",
@@ -24,7 +27,7 @@ const FullStackDevelopment = () => {
         {
         id:3,
         title:"Hot Topics That You Need To Know In Full Stack Developer Syllabus",
-        img:"https://www.guvi.in/blog/wp-content/uploads/2021/09/Full-Stack-Developer-course-syllabus.png",
+        img:fsd3,
         views:8788,
         author:"By Meghana D",
         date:"26 Mar, 2024",
@@ -42,7 +45,7 @@ const FullStackDevelopment = () => {
         {
         id:5,
         title:"Full Stack Developer Roadmap: A Complete Guide [2024]",
-        img:"https://www.guvi.in/blog/wp-content/uploads/2024/02/full_stack_developer_roadmap_in_2024.webp",
+        img:fsd5,
         views:6681,
         author:"By Meghana D",
         date:"19 Mar, 2024",

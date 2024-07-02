@@ -1,5 +1,7 @@
 import React from 'react';
-
+import data3 from '../assets/data3.png';
+import data4 from '../assets/data4.png';
+import data5 from '../assets/data5.jpg';
 const DataScience = () => {
     const courses = [
         {
@@ -22,7 +24,7 @@ const DataScience = () => {
         },
         {
             id: 3,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2022/06/5.-data-science-1536x804.png',
+            img:data3,
             title: 'Can A Commerce Student Do Data Science?',
             author: 'Saakshi Priyadarshini',
             date: '16 Apr, 2024',
@@ -31,7 +33,7 @@ const DataScience = () => {
         },
         {
             id: 4,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2023/07/image-4-1536x866.png',
+            img:data4,
             title: 'Roles and Responsibilities of a Data Scientist',
             author: 'Jaishree Tomar',
             date: '16 Apr, 2024',
@@ -40,7 +42,7 @@ const DataScience = () => {
         },
         {
             id: 5,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2023/01/paper-analysis-2-1536x1024.jpg',
+            img: data5,
             title: 'How to become a Data Scientist after Mechanical Engineering?',
             author: 'Lahari Chandana',
             date: '16 Apr, 2024',

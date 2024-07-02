@@ -1,5 +1,6 @@
 import React from 'react';
-
+import career4 from '../assets/career4.png';
+import career5 from '../assets/career5.gif';
 const Career = () => {
     const courses = [
         {
@@ -31,7 +32,7 @@ const Career = () => {
         },
         {
             id: 4,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2021/07/Blog-1-1-600x314.png',
+            img: career4,
             title: 'Is Data Science A Good Career Choice In 2024?',
             author: 'Archana',
             date: '16 Apr, 2024',
@@ -40,7 +41,7 @@ const Career = () => {
         },
         {
             id: 5,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2023/01/giphy.gif',
+            img: career5,
             title: 'What Is a Data Engineer? A Complete Guide to this Data Career',
             author: 'Tushar Vinocha',
             date: '16 Apr, 2024',
