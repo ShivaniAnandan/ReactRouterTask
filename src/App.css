@@ -1,0 +1,51 @@
+.absolute{
+    right: 1rem;
+    top: 1rem;
+    font-size: 0.875rem;
+}
+
+.img{
+    height: 200px !important;
+}
+
+.App {
+    text-align: center;
+  }
+  
+  nav {
+    border-bottom: 1px solid #EEEEEE;
+    margin: 20px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: green;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: green;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
