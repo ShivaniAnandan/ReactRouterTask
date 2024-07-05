@@ -4,7 +4,7 @@ import React from 'react';
 const FullStackDevelopment = ({ allCourses }) => {
     //return only Full Stack Course Cards
     const fullStackCourses = allCourses.filter(course => course.courseName.includes('Full Stack'));
-    console.log(fullStackCourses);
+    // console.log(fullStackCourses);
     
    
       

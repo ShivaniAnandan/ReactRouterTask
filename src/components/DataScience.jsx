@@ -2,8 +2,8 @@ import React from 'react';
 
 const DataScience = ({ allCourses }) => {
     //return only Data Science Course Cards
-    const filteredCourses = allCourses.filter(course => course.courseName.includes("Data Science"));
-    console.log(filteredCourses);
+    const DataScienceCourses = allCourses.filter(course => course.courseName.includes("Data Science"));
+    // console.log(DataScienceCourses);
     
 
     return (
@@ -11,7 +11,7 @@ const DataScience = ({ allCourses }) => {
             <div className="container mt-5">
                 <div className="row">
                 {/* Creating Cards Dynamically using Courses  array*/}
-                {filteredCourses.map(course => (
+                {DataScienceCourses.map(course => (
                     <div key={course.id} className="col-4">
                         <div className="card mb-3">
                             <img src={course.img} className="card-img-top img" alt={course.title} />

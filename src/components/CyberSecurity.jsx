@@ -2,8 +2,8 @@ import React from 'react';
 
 const CyberSecurity = ({ allCourses }) => {
     //return only Cyber Security Course Cards
-    const filteredCourses = allCourses.filter(course => course.courseName.includes("Cyber Security"));
-    console.log(filteredCourses);
+    const CyberSecurityCourses = allCourses.filter(course => course.courseName.includes("Cyber Security"));
+    // console.log(CyberSecurityCourses);
     
 
     return (
@@ -11,7 +11,7 @@ const CyberSecurity = ({ allCourses }) => {
             <div className="container mt-5">
                 <div className="row">
                  {/* Creating Cards Dynamically using Courses  array*/}
-                {filteredCourses.map((course)=>{
+                {CyberSecurityCourses.map((course)=>{
                         return(
                             <div className="col-4">
                             <div className="card mb-3" key={course.id}>

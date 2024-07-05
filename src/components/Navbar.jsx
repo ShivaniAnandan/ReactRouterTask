@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div>
             {/* Creating Navigation links */}
-            <nav className='d-flex justify-content-center gap-5 py-3 bg-'>
+            <nav className='d-flex justify-content-center gap-5 py-3'>
             <Link to='/' exact className='nav-link'>All</Link>
             <Link to='/fullstack' className='nav-link'>FullStackDevelopment</Link>
             <Link to='/datascience' className='nav-link'>Data Science</Link>
