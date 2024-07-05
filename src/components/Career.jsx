@@ -1,61 +1,17 @@
 import React from 'react';
-import career4 from '../assets/career4.png';
-import career5 from '../assets/career5.gif';
-const Career = () => {
-    const courses = [
-        {
-            id: 1,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2024/05/Feature-Image-Career-in-Animation.webp',
-            title: 'Career in Animation: Jobs, Salary, Future Scope in India (2024)',
-            author: 'Saanchi Bhardwaj',
-            date: '03 May, 2024',
-            views: '2276',
-            readTime: '4 Min Read'
-        },
-        {
-            id: 2,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2024/01/Feature-image-Top-Technologies-to-Learn.webp',
-            title: 'Top Technologies to Learn in 2024: Jumpstart a Successful Tech Career',
-            author: 'Saakshi Priyadarshini',
-            date: '14 Jun, 2024',
-            views: '14885',
-            readTime: '7 Min Read'
-        },
-        {
-            id: 3,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2023/12/Feature-image-Top-IT-Jobs-for-Commerce-Students.webp',
-            title: 'Top IT Jobs for Commerce Students: A Lucrative Career Path',
-            author: 'Jaishree Tomar',
-            date: '14 Jun, 2024',
-            views: '12698',
-            readTime: '5 Min Read'
-        },
-        {
-            id: 4,
-            img: career4,
-            title: 'Is Data Science A Good Career Choice In 2024?',
-            author: 'Archana',
-            date: '16 Apr, 2024',
-            views: '1321',
-            readTime: '4 Min Read'
-        },
-        {
-            id: 5,
-            img: career5,
-            title: 'What Is a Data Engineer? A Complete Guide to this Data Career',
-            author: 'Tushar Vinocha',
-            date: '16 Apr, 2024',
-            views: '2312',
-            readTime: '3 Min Read'
-        }
-    ];
+
+const Career = ({ allCourses }) => {
+    //return only Career Course Cards
+    const filteredCourses = allCourses.filter(course => course.courseName.includes("Career"));
+    console.log(filteredCourses);
+    
 
     return (
         <div>
             <div className="container mt-5">
                 <div className="row">
                  {/* Creating Cards Dynamically using Courses  array*/}
-                {courses.map(course => (
+                {filteredCourses.map(course => (
                     <div key={course.id} className="col-4">
                         <div className="card mb-3">
                             <img src={course.img} className="card-img-top img" alt={course.title} />

@@ -1,62 +1,17 @@
 import React from 'react';
-import data3 from '../assets/data3.png';
-import data4 from '../assets/data4.png';
-import data5 from '../assets/data5.jpg';
-const DataScience = () => {
-    const courses = [
-        {
-            id: 1,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2023/11/Feature-image-Top-High-Paying-Non-Coding-Jobs-in-Data-Science.webp',
-            title: 'Top 10 High Paying Non-Coding Jobs in Data Science in 2024',
-            author: 'Isha Sharma',
-            date: '14 Jun, 2024',
-            views: '12857',
-            readTime: '6 Min Read'
-        },
-        {
-            id: 2,
-            img: 'https://www.guvi.in/blog/wp-content/uploads/2023/07/Real-World-Data-Science-Examples-1536x804.webp',
-            title: '12 Real-World Data Science Examples: Power Of Data Science',
-            author: 'Lukesh S',
-            date: '25 Mar, 2024',
-            views: '8595',
-            readTime: '7 Min Read'
-        },
-        {
-            id: 3,
-            img:data3,
-            title: 'Can A Commerce Student Do Data Science?',
-            author: 'Saakshi Priyadarshini',
-            date: '16 Apr, 2024',
-            views: '7544',
-            readTime: '3 Min Read'
-        },
-        {
-            id: 4,
-            img:data4,
-            title: 'Roles and Responsibilities of a Data Scientist',
-            author: 'Jaishree Tomar',
-            date: '16 Apr, 2024',
-            views: '5547',
-            readTime: '6 Min Read'
-        },
-        {
-            id: 5,
-            img: data5,
-            title: 'How to become a Data Scientist after Mechanical Engineering?',
-            author: 'Lahari Chandana',
-            date: '16 Apr, 2024',
-            views: '3008',
-            readTime: '3 Min Read'
-        }
-    ];
+
+const DataScience = ({ allCourses }) => {
+    //return only Data Science Course Cards
+    const filteredCourses = allCourses.filter(course => course.courseName.includes("Data Science"));
+    console.log(filteredCourses);
+    
 
     return (
         <div>
             <div className="container mt-5">
                 <div className="row">
                 {/* Creating Cards Dynamically using Courses  array*/}
-                {courses.map(course => (
+                {filteredCourses.map(course => (
                     <div key={course.id} className="col-4">
                         <div className="card mb-3">
                             <img src={course.img} className="card-img-top img" alt={course.title} />

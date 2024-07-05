@@ -1,64 +1,19 @@
 import React from 'react';
-import fsd1 from '../assets/fsd1.jpg';
-import fsd3 from  '../assets/fsd3.png';
-import fsd4 from '../assets/fsd4.jpg';
-import fsd5 from '../assets/fsd5.webp';
 
-const FullStackDevelopment = () => {
-    let courses = [
-        {
-        id:1,
-        title:"Best Full-Stack Development Project Ideas in 2024",
-        img:fsd1,
-        iconimg:"https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg",
-        views:115491,
-        author:"By Isha Sharma.",
-        date:"14 Jun, 2024",
-        readTime:"4 Min Read"
-        },
-        {
-        id:2,
-        title:"How Long Would It Take to Be a Full Stack Developer?",
-        img:"https://www.guvi.in/blog/wp-content/uploads/2023/07/how-long-it-would-it-take-to-learn-full-stack-development_-1536x804.webp",
-        views:14469,
-        author:"By Meghana D",
-        date:"26 Mar, 2024",
-        readTime:"3 Min Read"
-        },
-        {
-        id:3,
-        title:"Hot Topics That You Need To Know In Full Stack Developer Syllabus",
-        img:fsd3,
-        views:8788,
-        author:"By Meghana D",
-        date:"26 Mar, 2024",
-        readTime:"3 Min Read"
-        },
-        {
-        id:4,
-        title:"Top 10 Full-Stack Developer Frameworks in 2024",
-        img:fsd4,
-        views:8666,
-        author:"By Isha Sharma",
-        date:"16 Apr, 2024",
-        readTime:"5 Min Read"
-        },
-        {
-        id:5,
-        title:"Full Stack Developer Roadmap: A Complete Guide [2024]",
-        img:fsd5,
-        views:6681,
-        author:"By Meghana D",
-        date:"19 Mar, 2024",
-        readTime:"6 Min Read"
-        },
-    ]
+
+const FullStackDevelopment = ({ allCourses }) => {
+    //return only Full Stack Course Cards
+    const fullStackCourses = allCourses.filter(course => course.courseName.includes('Full Stack'));
+    console.log(fullStackCourses);
+    
+   
+      
     return (
         <div>
             <div className="container mt-5">
                 <div className="row">
                     {/* Creating Cards Dynamically using Courses array */}
-                    {courses.map((course)=>{
+                    {fullStackCourses.map((course)=>{
                         return(
                             <div className="col-4">
                             <div className="card mb-3">
